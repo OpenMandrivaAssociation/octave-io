@@ -1,15 +1,16 @@
 %global octpkg io
 
 Summary:	Input/Output in external formats
-Name:		octave-%{octpkg}
+Name:		octave-io
 Version:	2.6.4
-Release:	1
-Source0:	https://downloads.sourceforge.net/octave/%{octpkg}-%{version}.tar.gz
+Release:	2
 License:	GPLv3+ and BSD
 Group:		Sciences/Mathematics
-Url:		https://packages.octave.org/%{octpkg}/
+#Url:		https://packages.octave.org/io/
+Url:		https://packages.octave.org/io/
+Source0:	https://downloads.sourceforge.net/octave/io-%{version}.tar.gz
 
-BuildRequires:	octave-devel >= 4.2.0
+BuildRequires:  octave-devel >= 4.2.0
 
 Requires:	octave(api) = %{octave_api}
 
@@ -22,18 +23,15 @@ Input/Output in external formats.
 %files
 %license COPYING
 %doc NEWS
-%dir %{octpkglibdir}
-%{octpkglibdir}/*
 %dir %{octpkgdir}
 %{octpkgdir}/*
+%dir %{octpkglibdir}
+%{octpkglibdir}/*
 
 #---------------------------------------------------------------------------
 
 %prep
 %autosetup -p1 -n %{octpkg}-%{version}
-
-# remove backup files
-#find . -name \*~ -delete
 
 %build
 %set_build_flags
