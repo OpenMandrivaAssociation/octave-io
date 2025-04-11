@@ -3,7 +3,7 @@
 Summary:	Input/Output in external formats
 Name:		octave-io
 Version:	2.6.4
-Release:	2
+Release:	3
 License:	GPLv3+ and BSD
 Group:		Sciences/Mathematics
 #Url:		https://packages.octave.org/io/
