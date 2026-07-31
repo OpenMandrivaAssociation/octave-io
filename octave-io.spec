@@ -2,8 +2,8 @@
 
 Summary:	Input/Output in external formats
 Name:		octave-io
-Version:	2.6.4
-Release:	3
+Version:	2.7.2
+Release:	1
 License:	GPLv3+ and BSD
 Group:		Sciences/Mathematics
 #Url:		https://packages.octave.org/io/
@@ -31,7 +31,7 @@ Input/Output in external formats.
 #---------------------------------------------------------------------------
 
 %prep
-%autosetup -p1 -n %{octpkg}-%{version}
+%autosetup -p1 -n io-2.7.2
 
 %build
 %set_build_flags
